@@ -1,0 +1,38 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.registerBox {
+	text-align: right;
+	border-radius: 10px;
+	padding: 10px 30px;
+	margin: 30px;
+	box-shadow: 1px 1px 1px 1px #555;
+}
+
+.registerBox p {
+	text-align: center;
+	margin: 3px;
+}
+
+.registerBox input {
+	margin: 2px;
+	padding: 0px;
+}
+
+.registerBoxButtons {
+	display: flex;
+	justify-content: center;
+}
+
+.registerBoxButtons a {
+	margin: 15px 6px 10px 6px;
+	padding: 3px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.registerBoxButtons a:hover {
+	background-color: green;
+}

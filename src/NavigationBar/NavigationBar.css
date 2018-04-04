@@ -1,0 +1,60 @@
+.NavBar {
+  padding: 0px 4px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f3f3f;
+  border: 1px solid #3f3f3f;
+}
+.NavBarButtons{
+  display: flex;
+}
+
+.NavBarButtons a{
+  width: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.NavBarButtons a:hover{
+  background-color: darkgreen;
+}
+
+.LoginDiv{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.Login {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.Login input {
+  margin-top: 3px;
+  margin-right: 2px;
+  max-width: 130px;
+}
+
+.LoginButtons {
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.LoginButtons a {
+  float: right;
+  font-size: 15px;
+  margin: 3px 5px;
+  padding: 0px 3px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.LoginButtons a:hover{
+  background-color: darkgreen;
+}
