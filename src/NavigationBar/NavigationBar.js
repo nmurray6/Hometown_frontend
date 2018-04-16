@@ -5,7 +5,7 @@ import './NavigationBar.css';
 
 const loggedIn = false;
 
-const login = (routeChange) => { return(
+const login = (routeChange, login) => { return(
    <div className="LoginDiv">
     <div>
      <form className="Login">
@@ -15,13 +15,14 @@ const login = (routeChange) => { return(
     </div>
     <div className="LoginButtons">
       <a onClick={() => routeChange("/register")}>Register</a>
-      <a>Login</a>
+      <a onClick={() => {login(true)}}>Login</a>
     </div>
   </div>
 );}
 
-const userInfo = () => { return(
+const userInfo = (logout) => { return(
     <div>
+      <a onClick={() => {logout()}}>Logout</a>
     </div>
   );}
 
@@ -37,13 +38,25 @@ const userInfo = () => { return(
   class NavigationBar extends Component {
     constructor(props) {
       super(props);
+      this.state = { loggedIn: this.props.auth.isAuthenticated() }
+
+      this.login = this.login.bind(this);
+      this.logout = this.logout.bind(this);
+    }
+
+    login(status){
+      this.setState({loggedIn: status});
+    }
+
+    logout(){
+      this.setState({loggedIn: false});
     }
 
   render() {
     return (
       <div className="NavBar">
         {NavigationButtons()}
-        {(loggedIn) ? userInfo() : login(this.props.routeChange)}
+        {this.state.loggedIn ? userInfo(this.logout) : login(this.props.routeChange, this.login)}
       </div>
     );
   }
