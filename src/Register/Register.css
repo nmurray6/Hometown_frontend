@@ -36,3 +36,18 @@
 .registerBoxButtons a:hover {
 	background-color: green;
 }
+
+.registerError {
+	border: red solid 2px;
+}
+
+.errorDiv{
+	height: 15px;
+	margin: 0px;
+	padding: 0px;
+	color:red;
+}
+.errorDiv p{
+	font-size: 12px;
+	margin: -1px 0px 0px 0px;
+}

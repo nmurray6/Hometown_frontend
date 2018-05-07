@@ -1,0 +1,17 @@
+
+.CharacterList {
+	min-height: 105px;
+	min-width: 105px;
+	margin: 0px 10px;
+}
+
+.CharacterList img {
+	background-color: gray;
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px #555;
+}
+
+.CharacterListSelected {
+	border: blue solid 1px;
+}

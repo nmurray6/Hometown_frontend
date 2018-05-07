@@ -22,6 +22,20 @@
   background-color: darkgreen;
 }
 
+.NavBarUserInfo {
+  color: white;
+  text-align: right;
+}
+
+.NavBarUserInfo p {
+  font-size: 20px;
+  margin: 4px;
+}
+.NavBarUserInfo a{
+  font-size: 12px;
+  margin: 0px 5px 0px 0px;
+}
+
 .LoginDiv{
   display: flex;
   flex-direction: column;
@@ -57,4 +71,11 @@
 
 .LoginButtons a:hover{
   background-color: darkgreen;
+}
+
+.LoginButtons p{
+  color: red;
+  font-size: 12px;
+  margin: 3px;
+  text-align: left;
 }

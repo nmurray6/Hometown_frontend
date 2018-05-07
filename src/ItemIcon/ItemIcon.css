@@ -1,0 +1,7 @@
+.selected{
+	border: blue solid 3px;
+}
+
+.unselected{
+	border: 3px solid gray;
+}

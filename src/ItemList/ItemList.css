@@ -1,0 +1,12 @@
+.ItemList {
+	min-height: 105px;
+	min-width: 105px;
+	margin: 0px 10px;
+}
+
+.ItemList img {
+	background-color: gray;
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px 1px #555;
+}
